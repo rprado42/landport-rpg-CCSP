@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXXVIII Encontro de RPG de Mesa - Medieval Portal</title>
+    <meta name="description" content="XXXVIII Encontro de RPG de Mesa - Centro Cultural São Paulo, 26 de Setembro de 2025">
+    <meta property="og:title" content="XXXVIII Encontro de RPG de Mesa">
+    <meta property="og:description" content="Um espaço para viver aventuras, conhecer novas pessoas e celebrar a diversidade. Centro Cultural São Paulo - 26/09/2025">
+    <meta property="og:image" content="rpg-event-poster.png">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Mobile Header -->
+        <header class="mobile-header">
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="mobile-title">XXXVIII ENCONTRO<br>RPG DE MESA</h1>
+        </header>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2 class="sidebar-title">XXXVIII<br>ENCONTRO<br>RPG DE MESA</h2>
+                <button id="close-sidebar" class="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <!-- Home Menu -->
+                <button class="nav-item active" data-section="home">
+                    <div class="nav-item-content">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </div>
+                </button>
+
+                <!-- Mesas Menu -->
+                <div class="nav-section">
+                    <button class="nav-item expandable" id="mesas-toggle">
+                        <div class="nav-item-content">
+                            <i class="fas fa-dice-d20"></i>
+                            <span>Mesas</span>
+                        </div>
+                        <i class="fas fa-chevron-down expand-icon"></i>
+                    </button>
+                    <div class="submenu" id="mesas-submenu">
+                        <button class="submenu-item" data-section="mesas" data-category="DnD">
+                            <i class="fas fa-dragon"></i>
+                            <span>D&D 5e</span>
+                        </button>
+                        <button class="submenu-item" data-section="mesas" data-category="ShadowLords">
+                            <i class="fas fa-sword"></i>
+                            <span>ShadowLords Mini-System 3e</span>
+                            <i class="fas fa-times crossed-swords"></i>
+                        </button>
+                        <button class="submenu-item" data-section="mesas" data-category="Outros">
+                            <i class="fas fa-book"></i>
+                            <span>Outros</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Materiais Menu -->
+                <button class="nav-item" data-section="materiais">
+                    <div class="nav-item-content">
+                        <i class="fas fa-scroll"></i>
+                        <span>Materiais</span>
+                    </div>
+                </button>
+
+
+
+                <!-- Artes Menu -->
+                <div class="nav-section">
+                    <button class="nav-item expandable" id="artes-toggle">
+                        <div class="nav-item-content">
+                            <i class="fas fa-palette"></i>
+                            <span>Artes</span>
+                        </div>
+                        <i class="fas fa-chevron-down expand-icon"></i>
+                    </button>
+                    <div class="submenu" id="artes-submenu">
+                        <button class="submenu-item" data-section="artes" data-category="artes-jogadores">
+                            <i class="fas fa-users"></i>
+                            <span>Artes dos Jogadores</span>
+                        </button>
+                        <button class="submenu-item" data-section="artes" data-category="inspiracao">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Inspiração</span>
+                        </button>
+                        <button class="submenu-item" data-section="artes" data-category="ilustracoes">
+                            <i class="fas fa-image"></i>
+                            <span>Ilustrações</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sobre Menu -->
+                <button class="nav-item" data-section="sobre">
+                    <div class="nav-item-content">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Sobre</span>
+                    </div>
+                </button>
+
+                <!-- Suporte Menu -->
+                <button class="nav-item" data-section="suporte">
+                    <div class="nav-item-content">
+                        <i class="fas fa-headset"></i>
+                        <span>Suporte</span>
+                    </div>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-header">
+                <h1 id="section-title">Bem-vindos ao XXXVIII Encontro de RPG</h1>
+                <p class="event-info">Centro Cultural São Paulo - Gibiteca Henfil • 26 de Setembro de 2025</p>
+            </div>
+
+            <div class="content-wrapper">
+                <!-- Home Content -->
+                <div id="home-content" class="content-section active">
+                    <div class="home-hero">
+                        <div class="hero-content">
+                            <h2 class="hero-title">O Que é RPG de Mesa?</h2>
+                            <p class="hero-description">
+                                Role-Playing Game (RPG) de mesa é uma forma de jogo colaborativo onde os participantes criam personagens e vivem aventuras épicas guiados por um Mestre. Surgido na década de 1970 com Dungeons & Dragons, o RPG se tornou uma das formas mais criativas de entretenimento, combinando narrativa, interpretação e estratégia.
+                            </p>
+                            
+                            <div class="hero-features">
+                                <div class="feature">
+                                    <i class="fas fa-users"></i>
+                                    <h3>Colaborativo</h3>
+                                    <p>Jogadores trabalham juntos para superar desafios e criar histórias memoráveis.</p>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-brain"></i>
+                                    <h3>Criativo</h3>
+                                    <p>Desenvolve imaginação, resolução de problemas e habilidades sociais.</p>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-infinity"></i>
+                                    <h3>Infinito</h3>
+                                    <p>Possibilidades limitadas apenas pela imaginação dos participantes.</p>
+                                </div>
+                            </div>
+
+                            <div class="our-mission">
+                                <h3><i class="fas fa-heart"></i> Nossa Proposta</h3>
+                                <p>
+                                    O XXXVIII Encontro de RPG de Mesa é um espaço seguro e inclusivo para viver aventuras, conhecer novas pessoas e celebrar a diversidade. Aqui, todo mundo é bem-vindo — menos o preconceito. Oferecemos mesas para todos os níveis, desde iniciantes até veteranos, com sistemas variados como D&D 5e, ShadowLords Mini-System e muito mais.
+                                </p>
+                                
+                                <div class="mission-highlights">
+                                    <div class="highlight">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Ambiente Seguro e Inclusivo</span>
+                                    </div>
+                                    <div class="highlight">
+                                        <i class="fas fa-dice-d20"></i>
+                                        <span>Múltiplos Sistemas de RPG</span>
+                                    </div>
+                                    <div class="highlight">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>Para Todos os Níveis</span>
+                                    </div>
+                                    <div class="highlight">
+                                        <i class="fas fa-handshake"></i>
+                                        <span>Comunidade Acolhedora</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cta-section">
+                                <button class="main-cta-btn" onclick="window.open('https://mailchi.mp/fc10778cdc9c/form', '_blank')">
+                                    <i class="fas fa-user-plus"></i>
+                                    Participe do Evento
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mesas Content -->
+                <div id="mesas-content" class="content-section">
+                    <div class="card main-card">
+                        <div class="card-header">
+                            <h2 class="card-title" id="tables-title">
+                                <i class="fas fa-dice-d6"></i>
+                                Mesas Disponíveis
+                            </h2>
+                        </div>
+                        <div class="card-content">
+                            <p class="description">
+                                Explore as aventuras épicas preparadas pelos nossos mestres. Cada mesa oferece uma experiência única no universo do RPG.
+                            </p>
+                            <div id="tables-grid" class="tables-grid">
+                                <!-- Content will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Materiais Content -->
+                <div id="materiais-content" class="content-section">
+                    <div class="card main-card">
+                        <div class="card-header">
+                            <h2 class="card-title">
+                                <i class="fas fa-scroll"></i>
+                                Materiais de RPG
+                            </h2>
+                        </div>
+                        <div class="card-content">
+                            <p class="description">
+                                Baixe todos os materiais necessários para suas aventuras de RPG.
+                            </p>
+                            
+                            <div class="materials-grid">
+                                <div class="material-category">
+                                    <h3><i class="fas fa-sword"></i> Shadow Lords Mini System 3e</h3>
+                                    <div class="material-item">
+                                        <button class="material-btn" onclick="window.open('https://horoscopezine.itch.io/mini-system-3e', '_blank')">
+                                            <i class="fas fa-download"></i>
+                                            <span>Shadow Lords Mini System 3e</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="material-category">
+                                    <h3><i class="fas fa-dragon"></i> D&D 5e</h3>
+                                    <div class="material-item">
+                                        <button class="material-btn" onclick="window.open('https://bibliotecaelfica.org/download/dd-5e-livro-do-jogador-fundo-brancocvaj2mdcje3ey8k2adp7yapy/', '_blank')">
+                                            <i class="fas fa-download"></i>
+                                            <span>D&D 5e - Livro do Jogador</span>
+                                        </button>
+                                    </div>
+                                    <div class="material-item">
+                                        <button class="material-btn" onclick="window.open('https://bibliotecaelfica.org/download/dd-5e-ficha-de-personagem-completavelezcwmpjaj0xbuznwyhecrv6u/', '_blank')">
+                                            <i class="fas fa-download"></i>
+                                            <span>D&D 5e - Ficha de Personagem</span>
+                                        </button>
+                                    </div>
+                                    <div class="material-item">
+                                        <button class="material-btn" onclick="window.open('https://bibliotecaelfica.org/download/dd-5e-guia-do-mestrelgdiau0ejgepxxic8e3fwgt0/', '_blank')">
+                                            <i class="fas fa-download"></i>
+                                            <span>D&D 5e - Guia do Mestre</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Artes Content -->
+                <div id="artes-content" class="content-section">
+                    <div class="card main-card">
+                        <div class="card-header">
+                            <h2 class="card-title">
+                                <i class="fas fa-palette"></i>
+                                <span id="artes-title">Galeria de Artes</span>
+                            </h2>
+                        </div>
+                        <div class="card-content">
+                            <p class="description" id="artes-description">
+                                Explore nossa coleção de artes relacionadas ao RPG.
+                            </p>
+                            
+                            <div id="artes-grid" class="artes-grid">
+                                <!-- Content will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobre Content -->
+                <div id="sobre-content" class="content-section">
+                    <div class="card main-card">
+                        <div class="card-header">
+                            <h2 class="card-title">
+                                <i class="fas fa-shield-alt"></i>
+                                Sobre Nossa Comunidade
+                            </h2>
+                        </div>
+                        <div class="card-content">
+                            <p class="description">
+                                Para garantir a segurança da nossa comunidade, conheça o que curtimos e o que não curtimos por aqui.
+                            </p>
+                            
+                            <div class="community-rules">
+                                <div class="rule-section negative">
+                                    <h3><i class="fas fa-times-circle"></i> NÃO CURTIMOS</h3>
+                                    <ul>
+                                        <li>Fascismo</li>
+                                        <li>Racismo</li>
+                                        <li>Homofobia</li>
+                                        <li>Transfobia</li>
+                                        <li>Misoginia</li>
+                                        <li>Sexismo</li>
+                                        <li>Discursos antidemocráticos</li>
+                                        <li>Discursos de ódio</li>
+                                        <li>Qualquer outro tipo de preconceito ou discriminação</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="rule-section positive">
+                                    <h3><i class="fas fa-check-circle"></i> CURTIMOS</h3>
+                                    <ul>
+                                        <li>RPG Solo</li>
+                                        <li>RPG de Mesa</li>
+                                        <li>RPG Coop</li>
+                                        <li>RPG Minimalista</li>
+                                        <li>RPG Moderno</li>
+                                        <li>RPG Indie</li>
+                                        <li><strong>Resumindo: tudo sobre RPG nos interessa</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Redes Sociais movidas para Sobre -->
+                            <div class="social-section">
+                                <h3><i class="fas fa-share-alt"></i> Siga-nos nas redes sociais:</h3>
+                                <div class="social-links">
+                                    <a href="https://www.instagram.com/horoscopezine/" target="_blank" class="social-link instagram">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>Instagram</span>
+                                    </a>
+                                    <a href="https://www.youtube.com/c/HoroscopeZine" target="_blank" class="social-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        <span>YouTube</span>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@horoscopezine" target="_blank" class="social-link tiktok">
+                                        <i class="fab fa-tiktok"></i>
+                                        <span>TikTok</span>
+                                    </a>
+                                    <a href="https://open.spotify.com/show/5qSb9gGhtcBQFtAWNDUVP8?utm_medium=share&utm_source=linktree" target="_blank" class="social-link spotify">
+                                        <i class="fab fa-spotify"></i>
+                                        <span>Spotify</span>
+                                    </a>
+                                    <a href="https://horos.bandcamp.com/" target="_blank" class="social-link bandcamp">
+                                        <i class="fab fa-bandcamp"></i>
+                                        <span>Bandcamp</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suporte Content -->
+                <div id="suporte-content" class="content-section">
+                    <div class="card main-card">
+                        <div class="card-header">
+                            <h2 class="card-title">
+                                <i class="fas fa-headset"></i>
+                                Suporte e Contato
+                            </h2>
+                        </div>
+                        <div class="card-content">
+                            <p class="description">
+                                Precisa de ajuda ou tem alguma dúvida? Entre em contato conosco!
+                            </p>
+                            
+                            <div class="support-options">
+                                <div class="support-item">
+                                    <button class="support-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSezC9q0AIZXgxANJ6_IaZOSDvDC8LpHUBFt98lCcTkZd1G68Q/viewform', '_blank')">
+                                        <i class="fas fa-envelope"></i>
+                                        <div class="support-content">
+                                            <h3>Contato Geral</h3>
+                                            <p>Formulário de contato para dúvidas gerais</p>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
